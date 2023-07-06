@@ -272,7 +272,7 @@ body{
   /*-----------------------------------  home page ---------------------------------------------*/
 
   .home-div{
-    background: rgba(0,0,0,0.4)url("https://img.freepik.com/free-vector/blue-futuristic-waves-background-with-computer-code-technology_53876-119575.jpg?w=996&t=st=1685527647~exp=1685528247~hmac=16a8542c343c5cc9873ef93188e30ba667d9cb313fbe23da9f581508edbbd54e");
+    background: rgba(0,0,0,0.8)url("../img/Screenshot\ 2023-06-08\ 094842.png");
     background-size: cover;
     background-blend-mode: darken;
     display: flex;
@@ -594,12 +594,12 @@ margin-bottom: 10px;
   margin-bottom: 120px;
 }
 .bg-dp{
-  background: rgba(0,0,0,0.4) url("https://img.freepik.com/free-vector/blue-futuristic-waves-background-with-computer-code-technology_53876-119575.jpg?w=996&t=st=1685527647~exp=1685528247~hmac=16a8542c343c5cc9873ef93188e30ba667d9cb313fbe23da9f581508edbbd54e");
+  background: rgba(0,0,0,0.8) url("../img/Screenshot\ 2023-06-08\ 094842.png");
   background-size: cover;
   background-blend-mode: darken;
 }
 .work-div{
-    background: rgba(0,0,0,0.5) url("https://img.freepik.com/free-vector/blue-futuristic-waves-background-with-computer-code-technology_53876-119575.jpg?w=996&t=st=1685527647~exp=1685528247~hmac=16a8542c343c5cc9873ef93188e30ba667d9cb313fbe23da9f581508edbbd54e");
+    background: rgba(0,0,0,0.8) url("../img/Screenshot\ 2023-06-08\ 094842.png");
     background-size: cover;
     background-blend-mode: darken;
     display: flex;
