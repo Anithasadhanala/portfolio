@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Portfolio</title>
+    <title>Portfolio</title>
     <link rel="icon" type="image/x-icon" href="https://img.freepik.com/free-vector/branding-identity-corporate-logo-vector-design-template_460848-13935.jpg?w=740&t=st=1685534521~exp=1685535121~hmac=e5466c0fb06421909037c4bc6a714eed8aa3d6378c951af658a1c1223a5102e1">
-    
     
     <link rel="stylesheet" href="assets/css/style.css"/>
     
@@ -19,8 +18,47 @@
 
 
     <link rel="stylesheet" href="assets/bootStrap/css/bootstrap.min.css"/>
-</head>
+
+
+
+    <style>
+        #loader {
+            border: 12px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 12px solid #444444;
+            width: 70px;
+            height: 70px;
+            animation: spin 1s linear infinite;
+        }
+ 
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        .center {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    </style>
+    </head>
+ 
 <body>
+
+
+
+    <div id="loader" class="center"></div>
+   
+
+
+
+
+
+
     <!-- Navbar head  -->
 
     <section class="section-head">
@@ -76,7 +114,25 @@
                 <img src="./assets/img/ushh-removebg-preview.png" class="img-dp "/>
             </div>
         </div>
+    
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </section>
 
 <!----Live in the future-->
@@ -286,6 +342,24 @@
      
 </body>
 <script>
+
+
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                    "body").style.visibility = "hidden";
+                document.querySelector(
+                    "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                    "#loader").style.display = "none";
+                document.querySelector(
+                    "body").style.visibility = "visible";
+            }
+        };
+
+
+
     const hamburger = document.querySelector(".hamburger");
     hamburger.addEventListener("click",function(){
         document.querySelector(".portfolio-navbar").classList.toggle("show");
